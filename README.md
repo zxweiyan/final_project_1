@@ -39,32 +39,39 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+## About this project
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Description:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A restaurant chain has reached out to your team to build a reservation
+system.
 
-### Code Splitting
+**Here are the details:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+-   Two categories of users / customers: guest user or registered user.
 
-### Analyzing the Bundle Size
+-   Users should be able to search for a table and reserve.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    -   User doesn't need to login to the system to reserve a table. If
+        registered users, they can login.
 
-### Making a Progressive Web App
+    -   User enters name, phone, email, date and time (date picker), and
+        \# of guests for dining and system presents available tables.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    -   Tables have maximum capacity limit i.e., 2, 4, 6, or 8.
 
-### Advanced Configuration
+    -   Different combinations are allowed, and owner accommodates the
+        seating, for example: someone requests 8 guests and table for 8
+        is not available but 2 + 6, or 4+4 is available. System should
+        combine the tables and notify owner they need to combine tables.
+        In this case System reserves both tables.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+-   If a guest user i.e., not a registered user, system should prompt
+    user to register (Optional) before finalizing the reservation.
 
-### Deployment
+-   Registered users will have these fields:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    -   Name, mailing address, billing address (checkbox if same as
+        mailing address), Preferred Diner \# (system generated), Earned
+        points (based on \$ spent i.e., \$1 is 1 point), preferred
+        payment method (cash, credit, check).
