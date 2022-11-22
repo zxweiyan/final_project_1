@@ -1,9 +1,11 @@
 import React from "react";
-import SigninPage from './SigninPage'
-
 function App() {
   return (
-    <SigninPage />
+    <>
+    <h1>King of Burger</h1>
+    <div className="background"></div>
+    <button>Sign In</button>
+    </>
   )
 }
 
